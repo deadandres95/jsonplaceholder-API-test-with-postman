@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "a700610f-3883-4c80-ad6d-31dd2cf1ef93",
+		"name": "jsonplaceholder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "94da5ae1-e440-4e27-8c02-535ca5518d98",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('name');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field email\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('email');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('body');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(900);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "d5478cc7-96c4-4bd5-84c1-7bef011bdfab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/comments"
+			},
+			"response": []
+		},
+		{
+			"name": "Photos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b676ad1-f878-4004-ab7a-4f098f30fbf2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field albumId\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('albumId');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field title\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('title');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field url\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('url');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "406b72f3-2788-4e3d-94cd-5fb48d578d8f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/photos"
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4e886cdb-69a2-4f2d-b293-d4860628dcdb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('name');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field address\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('address');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate that exists the field city\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include('city');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "c0101f66-5d7d-4c7a-adf6-5777583390bf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/users"
+			},
+			"response": []
+		}
+	]
+}
