@@ -29,7 +29,7 @@
 							"    pm.expect(pm.response.text()).to.include('body');\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"pm.test(\"Response time is less than 900ms\", function () {\r",
 							"    pm.expect(pm.response.responseTime).to.be.below(900);\r",
 							"});"
 						],
@@ -37,7 +37,7 @@
 					}
 				}
 			],
-			"_postman_id": "d5478cc7-96c4-4bd5-84c1-7bef011bdfab",
+			"id": "d5478cc7-96c4-4bd5-84c1-7bef011bdfab",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -80,7 +80,7 @@
 					}
 				}
 			],
-			"_postman_id": "406b72f3-2788-4e3d-94cd-5fb48d578d8f",
+			"id": "406b72f3-2788-4e3d-94cd-5fb48d578d8f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -123,7 +123,7 @@
 					}
 				}
 			],
-			"_postman_id": "c0101f66-5d7d-4c7a-adf6-5777583390bf",
+			"id": "c0101f66-5d7d-4c7a-adf6-5777583390bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
